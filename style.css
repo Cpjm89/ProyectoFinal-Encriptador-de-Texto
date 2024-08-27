@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --color-primario:#f0f8ff;
+    --color-secundario: #0A3871;
+    --color-terciario: #D8DFE8;
+    --color-cuatro: #495057;
+
+    --tipografia: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    background-color: var(--color-primario);
+    color: var(--color-cuatro);
+}
+
+.header{
+    margin: 40px 0px 0px 40px;
+    position: absolute;
+}
+
+.logo-alura{
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    margin-left: 40px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.primercaja-contenido{
+    width: 55%;
+    margin-left: 200px;
+    margin-bottom: 168px 0px 0px 140px;
+}
+
+
+.textarea-format{
+    width: 680px;
+    height: 288px;
+    line-height: 40px;
+    font-family: var(--tipografia);
+    font-size: 32px;
+    margin-top: 168px;
+    color: var(--color-secundario);
+    background-color: var(--color-primario);
+    border: none;
+    outline: none;
+}
+
+
+.texto-alerta-minusculas{
+    font-family: var(--tipografia);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    size: 16px;
+}
+
+
+.alerta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+}
+
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    justify-content: left;
+    gap: 20px;
+
+}
+
+
+.estilo-encriptar{
+    width: 328px;
+    height: 67px;
+    color: var(--color-terciario);
+    background-color: var(--color-secundario);
+    text-align: center;
+    padding: 1.5rem 0;
+    border-radius: 16px;
+    font-family: var(--tipografia);
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+}
+
+
+.estilo-desencriptar{
+    width: 328px;
+    height: 67px;
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    text-align: center;
+    padding: 1.5rem 0px;
+    border-radius: 16px;
+    font-family: var(--tipografia);
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+}
+
+
+.estilo-desencriptar:hover{
+    background-color: var(--color-cuatro);
+    color: var(--color-primario);
+}
+
+
+.estilo-encriptar:hover{
+    background-color: var(--color-cuatro);
+    color: var(--color-primario);
+}
+
+
+.segunda-seccion{
+    width: 400px;
+    height: 580px;
+    position: relative;
+    text-align: center;
+    background: white;
+    border-radius: 32px;
+    margin-top: 40px;
+    margin-left: 0px;
+    box-shadow: 10px 10px 25px -8px;
+}
+
+.segundacaja-contenido{
+    width: 250px;
+    margin-top: 50%;
+    margin: auto;
+}
+
+
+.img-munieco{
+    background: white;
+    width: 80%;
+    margin-top: 120px;
+}
+
+.texto-ningun{
+    font-family: var(--tipografia);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-cuatro);
+}
+
+.ingrese-texto{
+    font-family: var(--tipografia);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.textarea-format2{
+    font-family: var(--tipografia);
+    width: 100%;
+    height: 485px;
+    padding: 20px;
+    font-weight: 400;
+    left: 0;
+    top: 20px;
+    border-radius: 32px;
+    font-size: 1.5rem;
+    line-height: 36px;
+    resize: none;
+    position: absolute;
+    background: transparent;
+    border: none;
+}
+
+.textarea-format2{
+    outline: none;
+}
+
+.boton-copiar{
+    width: 336px;
+    height: 67px;
+    margin: 23px;
+    line-height: 19px;
+    text-align: center;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    padding: 24px;
+    color: var(--color-secundario);
+    background-color: white;
+    border-radius: 16px;
+    border: solid var(--color-secundario) 2px;
+    font-family: var(--tipografia);
+    font-size: 18px;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+
+.boton-copiar:hover{
+    background-color: var(--color-cuatro);
+    color: var(--color-primario);
+}
+
+
+.footer{
+    background-color: var(--color-secundario);
+    padding: 10px;
+    color: var(--color-terciario);
+    text-align: center;
+    font-family: var(--tipografia);
+    width: 100vw;
+    bottom: 0px;
+    position: fixed;
+}
+
+@media (max-width: 1200px){
+    
+    main{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .primercaja-contenido{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        width: 100%;
+        margin: 168px 0px 0px 0px;
+    }
+
+    .alerta{
+        margin: 16px;
+        position: inherit;
+    }
+
+    .texto-alerta-minusculas{
+        position: static;
+    }
+
+    .botones{
+        display: flex;
+        position: inherit;
+        align-items: center;
+    }
+
+    .alerta{
+        position: inherit;
+        margin: 15px;
+    }
+
+    .segunda-seccion{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .segundacaja-contenido{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        position: absolute;
+        bottom: 20%;
+    }
+
+    .img-munieco{
+        display: none;
+    }
+
+    .textarea-format2{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+
+    .boton-copiar{
+        width: 100%;
+        position: inherit;
+        visibility: hidden;
+    }
+
+}
+
+@media (max-width: 750px){
+
+    .primercaja-contenido{
+        width: 90%;
+    }
+
+    .textarea-format{
+        display: grid;
+        gap: 21px;
+    }
+
+}
+
+@media (max-width: 700px){
+
+    .primercaja-contenido{
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .textarea-format{
+        width: 90%;
+        margin-top: 20px;
+
+    }
+
+
+    .botones{
+        display: grid;
+        gap: 21px;
+    }
+
+    .segunda-seccion{
+        width: 90%;
+    }
+
+    .footer{
+        font-size: 20px;
+    }
+
+}
